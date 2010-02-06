@@ -42,9 +42,9 @@ body {background:#000000 url(../images/background.jpg) 0 0 repeat-x;font-size:14
 #ProgramsSection {width:350px;background:url(../images/programs_text.jpg) 0px 0px no-repeat;padding:12px 5px 0px 95px;}
 #LinksSection {height:300px;width:350px;background:url(../images/lniks_text.jpg) 0px 0px no-repeat;padding:12px 5px 0px 110px;}
 #LinksSection ul {}
-#LinksSection ul li {padding-bottom:10px;list-style-type:disc}
-#LinksSection ul li a:link, #LinksSection ul li a:visited {color:#000000;text-decoration:none;}
-#LinksSection ul li a:hover {background-color:#d5c853}
+#LinksSection ul li {padding-bottom:10px;list-style-type:none}
+#LinksSection ul li a:link, #LinksSection ul li a:visited , #contactSection a:link, #contactSection a:visited{color:#000000;text-decoration:none;border-bottom:#a09428 1px dashed}
+#LinksSection ul li a:hover , #contactSection a:hover{background-color:#d5c853}
 
 /* 
 #NewsSection a:link, #NewsSection a:visited,#LinksSection a:link, #LinksSection a:visited {color:#000000;text-decoration:none;padding:0px 3px 0px 3px;}
@@ -82,7 +82,7 @@ table.videoTable td h4, table.photoTable td h4{font-weight:bold;font-size:14px;c
  #announcementSection .announcementSectionContent h3{font-weight:bold;font-size:18px;color:#f70a17;}
  #announcementSection ul {padding-left:8px;}
  #announcementSection ul li {list-style-type:disc;padding-bottom:3px;}
- #announcementSection a:link, #announcementSection a:visited {color:#000000;text-decoration:none;padding:0px 3px 0px 3px;}
+ #announcementSection a:link, #announcementSection a:visited {color:#000000;text-decoration:none;padding:0px 3px 0px 3px;border-bottom:#a09428 1px dashed}
  #announcementSection a:hover {background-color:#d5c853}
  
  
