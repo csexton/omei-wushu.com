@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+  <title>O-mei Wushu - Fairfax, VA</title>
+  <meta name="keywords" content="Omei, O-mei, wushu, kung fu, sifu, martial arts" />
+  <meta name="description" content="O-mei wushu kungfu center, falls church, va" /> 
+  
+  
+  <link rel="stylesheet" href="css/omeiStyle.css" type="text/css" />
+  <link rel="stylesheet" href="css/omeiTabs.css" type="text/css" />
+  <link rel="stylesheet" href="css/omeiPrint.css" type="text/css" media="print" />
+
+  <script type="text/javascript" src="javascript/jquery-1.3.2.js"></script>
+  <!-- <script type="text/javascript" src="javascript/jquery.cycle.all.min.js"></script> 
+  <script type="text/javascript" src="javascript/jquery.easing.1.3.js"></script>-->
+   <script type="text/javascript" src="javascript/jquery.multi-ddm.js"></script> 
+  <script type="text/javascript" src="javascript/jquery.scrollTo.js"></script>
+
+<script type="text/javascript">
+
+$(function(){
+	var css = ['parent-hover', 'child-hover1', 'child-hover2', 'child-hover3', 'child-hover4'];
+	$('#multi-ddm').dropDownMenu({timer: 800, levels: css});
+	
+});
+
+$(document).ready(function() {	
+
+
+  //Get all the LI from the #tabMenu UL
+  $('#tabMenu > li').click(function(){
+    
+    //perform the actions when it's not selected
+    if (!$(this).hasClass('selected')) {    
+           
+    //remove the selected class from all LI    
+    $('#tabMenu > li').removeClass('selected');
+    
+    //Reassign the LI
+    $(this).addClass('selected');
+    
+    //Hide all the DIV in .boxBody
+    $('.boxBody div').slideUp('1500');
+    
+    //Look for the right DIV in boxBody according to the Navigation UL index, therefore, the arrangement is very important.
+    $('.boxBody div:eq(' + $('#tabMenu > li').index(this) + ')').slideDown('1500');
+  }
+    
+  })
+  
+});
+</script>
+
+</head>
+
+<body>
+	<div id="container">
+		<div><img src="images/homeHeader.jpg" alt="Omei Wushu"/></div>
+		<div id="menuBar"><!-- menuBar -->
+			<ul id='multi-ddm'>
+				<li><a href='index.htm'>Home</a></li>
+				<li><a href="instructor.htm">Instructor</a></li>
+				<li><a href="programs.htm">Programs</a></li>
+				<li><a href="schedule.htm">Schedule</a></li>
+				<li><a href="#">Media</a>
+					<ul>
+						<li><a href="photos.htm">Photos</a></li>
+						<li><a href="videos.htm">Videos</a></li>
+						<li><a href="Links.htm">Links</a></li>
+					</ul>
+				</li>
+				<li><a href="Achievements.htm">Achievements</a></li>
+				<!--	<li><a href="Store.htm">Store</a></li> -->
+					<li><a href="contact.htm">Contact Us</a></li>
+			</ul>
+		</div><!-- end menuBar -->
+		<div id="contentWrapper">
+		<div id="leftColumn" ><!-- leftColumn -->
+			<h2>About O-mei</h2>
+			<div id="aboutUsSection"><!--  aboutUs -->
+				<p>Established in 1993, under the direction of Sifu Xiaolin Lu, O-mei Wushu Center is a professional martial arts center teaches contemporary and traditional wushu styles along with weapons, health qigong and tai-chi.
+				At O-mei, our primary focus is on the development of the student, either concerning personal growth or physical exercise. We have seen our students grow and change over the years in character, personality, and health. Some of our students have applied what they have learned in their personal lives and have accomplished their dreams and goals thru wushu.
+				</p>
+				<br/>
+				<p>
+					O-mei has experienced instructors providing the opportunity for students to compete in all categories of Chinese martial arts tournaments at the local, regional, national and international levels. O-mei's training facility uses competition gymnastic type flooring. Students can take unlimited classes and train with peers of the same experience level.
+				</p>
+				
+				
+			</div><!-- end aboutUs -->
+			
+			<div id="announcementSection"><!-- announcementSection -->
+				<h2>Announcements</h2>
+				<!-- template copy this section below -->
+					<!-- announcementSectionContent -->
+						<!-- <div class="announcementSectionContent">
+							
+						<h4>Jan 1, 2010</h4>
+						<h3>Happy New Year</h3>
+							<p>O-mei starts the new year with a new website. Hope everyone will have a happy New Year.</p>
+					</div>-->
+					<!-- end announcementSectionContent -->
+				<!-- end template -->
+				<div class="announcementSectionContent"><!-- announcementSectionContent -->
+				<h4>July 17-18</h4>
+				<h3>2010 Jr Wushu Trials</h3>
+					<p><a href="http://www.wushutrials.com" target="_blank">http://www.wushutrials.com</a></p>
+			</div><!-- end announcementSectionContent -->
+				<div class="announcementSectionContent"><!-- announcementSectionContent -->
+				<h4>Feb. 13, 2010</h4>
+				<h3>Chinese New Year celebration</h3>
+					<p>Students and parents, bring your friends to celebrate Chinese New Year with us. We will be learning to make dumplings, play games and many other fun activities.</p>
+			</p>
+			</div><!-- end announcementSectionContent -->
+			
+				<div class="announcementSectionContent"><!-- announcementSectionContent -->
+				<h4>Jan. 1, 2010</h4>
+				<h3>Happy New Year</h3>
+					<p>O-mei starts the new year with a new website. Hope everyone will have a happy New Year.</p>
+			</div><!-- end announcementSectionContent -->
+			<div class="announcementSectionContent"><!-- announcementSectionContent -->
+				<h4>Sept 26, 2009</h4>
+				<h3>2009 USAWKF National Tournament</h3>
+					<p>O-mei hosted the 2009 USAWKF National Championships this year in George Mason High School, Falls Church, VA. Every student trained hard and participated in this competition.</p>
+			</div><!-- end announcementSectionContent -->
+			
+		</div><!-- end announcementSection -->
+		  
+		</div><!-- end leftColumn -->
+		
+		<div id="rightColumn" ><!-- rightColumn -->
+			<img src="images/achievementHeader.jpg" alt="Colvin"/>
+			<div id="ourStudentsSection"><!-- studentSection -->
+			<h2>Our Students</h2>
+			<div>
+				Our students are consistently among the top winners in all levels of competition and have won over two hundred gold medals in numerous martial arts competitions.
+				<br/><br/>
+				<p>Click below to see how they did the last couple of years.</p>
+				<br/><br/><br/>
+			</div>
+			</div><!-- end studentSection -->
+			<br/>
+			<a name="tabsHere"></a>
+<div class="box">
+<ul id="tabMenu">
+  <li class="currentYear selected"><a href="#tabsHere">2010</a></li>
+  <li class="lastYear"><a href="#tabsHere">2009</a></li>
+  <li class="twoYearsAgo"><a href="#tabsHere">2008</a></li>
+  <li class="threeYearsAgo"><a href="#tabsHere">2007</a></li>
+  <li class="fourYearsAgo"><a href="#tabsHere">2006</a></li>
+</ul>
+<div class="boxTop"></div>
+
+<div class="boxBody">
+  <div id="currentYear" class="show">
+    <ul>
+      <li class="last">Coming Soon.</li>
+	  <!-- template -->
+	  <!-- 
+	  <li>
+	  <h4>title</h4>
+		<p>some text </p>
+		</li> -->
+    </ul>  
+  </div>  <!-- end currentYear -->
+  
+  <div id="lastYear">
+    <ul>
+      <li><!-- U.S. Team Members -->
+		<h4>U.S. Team Members</h4>
+		<table class="studentTable">
+			<tr>
+				<td>Colvin Wang</td>
+				<td>Max Ehrlich</td>
+			</tr>
+			<tr>
+				<td>Donovan Hui</td>
+				<td>Sarah Chang</td>
+			</tr>
+			<tr>
+				<td>Stephon Morton</td>
+				<td>Eugene Moy</td>
+			</tr>
+		</table>
+	</li><!-- end U.S. Team Members -->
+	<li><!-- 2009 US Wushu Team Trials -->
+		<h4>Congratulations to the<br/>2009 US Wushu Team Trials <br/> and their national rankings</h4>
+				<p class="studentCategoryHeadings">Male Chang Quan</p>
+				<table class="studentTable">
+					<tr>
+						<td>#4 Colvin Wang</td>
+						<td>#8 Donovan hui</td>
+					</tr>
+					<tr>
+						<td>#5 Eugene Moy</td>
+						<td>#21 Pengyu Fan</td>
+					</tr>
+					<tr>
+						<td>#30 Ryan Lam</td>
+						<td></td>
+					</tr>
+				</table>
+	</li><!-- 2009 US Wushu Team Trials -->
+	<li><!-- male nq -->
+		<p class="studentCategoryHeadings">Male Nan Quan</p>
+				<table class="studentTable">
+					<tr>
+						<td>#1 Max Ehrlich</td>
+						<td>#3 Jonathan Sn</td>
+					</tr>
+					<tr>
+						<td>#5 Simon Ho</td>
+						<td>#21 Pengyu Fan</td>
+					</tr>
+				</table>
+	</li><!-- end male nq -->
+	<li><!-- nd -->
+		<p class="studentCategoryHeadings">Male Nan Dao</p>
+		<table class="studentTable">
+			<tr>
+				<td>#2 Max Ehrlich</td>
+				<td>#4 Jonathan Sun</td>
+			</tr>
+			<tr>
+				<td>#5 Simon Ho</td>
+				<td></td>
+			</tr>
+		</table>
+	</li><!-- end nd -->
+	<li><!-- male ng -->
+		<p class="studentCategoryHeadings">Male Nan Gun</p>
+				<table class="studentTable">
+					<tr>
+						<td>#1 Max Ehrlich</td>
+						<td>#3 Simon Ho</td>
+					</tr>
+				</table>
+	</li><!-- end male ng -->
+	<li><!-- male ds -->
+		<p class="studentCategoryHeadings">Male Dao Shu</p>
+		<table class="studentTable">
+			<tr>
+				<td>#3 Pengyu Fan</td>
+				<td>#4 Eugene Moy</td>
+			</tr>
+		</table>
+	</li><!-- end male ds -->
+	<li><!-- male gs -->
+		<p class="studentCategoryHeadings">Male Gun Shu</p>
+		<table class="studentTable">
+			<tr>
+				<td>#6 Eugene Moy</td>
+				<td>#8 Ryan Lam</td>
+			</tr>
+			<tr>
+				<td>#10 Pengyu Fan</td>
+				<td></td>
+			</tr>
+		</table>
+	</li><!-- end male gs -->
+	<li><!-- male js -->
+		<p class="studentCategoryHeadings">Male Jian Shu</p>
+			<table class="studentTable">
+				<tr>
+					<td  >#3 Colvin Wang</td>
+					<td>#4 Donovan Hui</td>
+				</tr>
+				<tr>
+					<td>#6 Stephon Morton</td>
+					<td></td>
+				</tr>
+			</table>
+	</li><!-- end male js -->
+	<li><!-- male qs -->
+		<p class="studentCategoryHeadings">Male Qiang Shu</p>
+		<table class="studentTable">
+			<tr>
+				<td>#1 Colvin Wang</td>
+				<td>#7 Donovan hui</td>
+			</tr>
+			<tr>
+				<td>#8 Stephon Morton</td>
+				<td></td>
+			</tr>
+		</table>
+	</li><!-- end male qs -->
+	<li><!-- female -->
+		<p class="studentCategoryHeadings">Female Chang Quan</p>
+		<table class="studentTable">
+			<tr>
+				<td >#10 Emily Fan</td>
+				<td>#15 Amy Li</td>
+			</tr>
+			<tr>
+				<td >#18 Amy Chang</td>
+				<td></td>
+			</tr>
+		</table>
+	</li><!-- end female -->
+	<li><!-- female ds -->
+		<p class="studentCategoryHeadings">Female Dao Shu</p>
+		<table class="studentTable">
+			<tr>
+				<td >#8 Amy Li</td>
+				<td></td>
+			</tr>
+			</table>
+	</li><!-- end female ds -->
+	<li><!-- female gs -->
+		<p class="studentCategoryHeadings">Female Gun Shu</p>
+		<table class="studentTable">
+			<tr>
+				<td >#9 Amy Li</td>
+				<td></td>
+			</tr>
+			</table>
+	</li><!-- end female gs -->
+	<li><!-- female js -->
+		<p class="studentCategoryHeadings">Female Jian Shu</p>
+		<table class="studentTable">
+			<tr>
+				<td >#5 Emily Fan</td>
+				<td></td>
+			</tr>
+		</table>
+	</li><!-- end female js -->
+      <li class="last"><!-- female qs -->
+	  <p class="studentCategoryHeadings">Female Qiang Shu</p>
+		<table class="studentTable">
+			<tr>
+				<td >#8 Emily Fan</td>
+				<td></td>
+			</tr>
+		</table>
+	</li><!-- end female qs -->
+    </ul>
+  </div><!-- end lastyear -->
+  
+  <div id="twoYearsAgo">
+    <ul>
+	<li>
+		<h4>USA Wushu Jr team</h4>
+		<p>8 of 12 positions were occupied by O-mei students who participated in the 2nd World Jr Wushu Championship.</p>
+		<br/>
+		<table class="studentTable">
+			<tr>
+				<td>Colvin Wang</td>
+				<td>Max Ehrlich</td>
+			</tr>
+			<tr>
+				<td>Tenyia Lee</td>
+				<td>Catherine Archer</td>
+			</tr>
+			<tr>
+				<td>Emily Fan</td>
+				<td>Wesley Huie</td>
+			</tr>
+			<tr>
+				<td>Ryan Feng</td>
+				<td>Raymond Bao</td>
+			</tr>
+		</table>
+	</li>
+	<li class="last">
+		 <h4>Beijing Wushu Tournament</h4>
+		 <p>O-mei students, Colvin Wang and Tenyia Lee qualified to participate in the 2008 Beijing “Olympics” Wushu tournament.</p>
+	  </li>
+    </ul>  
+  </div><!-- end twoYearsAgo -->
+  <div id="threeYearsAgo"><!-- three years ago -->
+    <ul>
+      <li class="last">
+		 <h4>World Wushu Tournament</h4>
+		 <p>O-mei student, Tenyia Lee qualified to participate in the World Wushu tournament.</p>
+	 </li>
+    </ul>  
+  </div><!-- end threeYearsAgo -->
+   <div id="fourYearsAgo"><!-- four years ago -->
+     <ul>
+      <li class="last">Coming Soon.</li>
+	  </ul>
+  </div><!-- end fourYearsAgo -->
+</div><!-- end boxBody -->
+<div class="boxBottom"></div>
+</div><!-- end box -->
+
+		</div><!-- end rightColumn -->
+		</div><!-- end contentWrapper -->
+		<br class="clearBoth"/><br/>
+	</div><!-- end container -->
+	<div id="footer">
+	<div id="footerWrapper">
+		<div id="wushuInfo">
+			<h2>About Wushu</h2>
+			 
+				<p>Wushu, the ancient fighting art of China, is both a contemporary sport and a traditional method of self defense and natural healing.</p>
+				<br/>
+				<p>Wushu's many styles dates back to early Chinese society when tools and weapons came into use.</p>
+				<br/>
+			<p>The most famous of all Wushu styles comes from the Shaolin Temple of Hunan Province, China. The monks of this temple believed that
+				martial arts practice would increase the longevity of life and discipline their spirit. The exploits of the warrior monks are well documented
+				through China's history but as military technology advanced, the role of wushu in warfare gradually diminished. Nevertheless
+				it still retains the original martial nature and its athletic and moral values.</p>
+			<br>
+			<p>Wushu is also popular as a scientific and systematic exercise and health building program for the entire body.</p>
+		</div><!-- end wushuInfo -->
+		
+		<div id="wushuInfoCont">
+		<p>
+			Regular
+			practice produces beneficial effects not only on muscles and bones, but also on the nervous, respiratory and cardio-vascular systems.
+			Wushu is widely recommended as an effective means of keeping fit and treating chronic disease.
+		</p>
+		<br/>
+		<p>
+			Today it is a beautiful and awe-inspiring sport and cultural performing art, with the benefits of physical fitness and self-defense. There
+			is a style suitabe for everyone from preschoolers to senior citizens.
+		</p>
+		<br/>
+		<p>
+			In the past few years the popularity of wushu in China has been increasing, and China expects to include it in the future Olympic Games. Other nations,
+			including the United States, are now beginning to develop a large following for this ancient art.
+		</p>
+		</div><!-- end wushuInfoCont -->
+		<br class="clearBoth"/>
+	</div><!-- end footerContent -->
+</div><!-- end footer -->
+
+
+	
+	
+	
+</body>
+</html>

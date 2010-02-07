@@ -1,0 +1,206 @@
+/*
+Copyright (c) 2009, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.8.0r4
+*/
+html{color:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}
+
+
+body {background:#000000 url(../images/background.jpg) 0 0 repeat-x;font-size:14px;font-family:arial,sans-serif;}
+ #container {width:900px;background-color:#ffffff;margin:0 auto;background:#ffffff url(../images/contentBackground.jpg) 0 0 repeat-y;}
+
+ #header {}
+ #menuBar {font-size:14px;width:900px;height:27px;background:url(../images/menuBackground.jpg) -1px 0 repeat-x;}
+ #contentWrapper {margin:-1px 0px 0px 0px;padding:40px 35px 25px 35px;width:900px;vertical-align:top;}
+  #leftColumn {float:left;margin:0px;width:400px;padding-bottom:20px;}
+  #fullPage {margin:0px;width:800px;}
+  #rightColumn {margin:0px 0px 0px 460px;width:360px;padding:0px 0px 0px 0px;}
+  #rightColumn img{padding-left:40px}
+  #rightColumnSchedule {margin:0px 0px 0px 460px;width:360px;padding:0px 0px 0px 0px;}
+  #leftColumn h2, #fullPage h2 {margin:0px 0px 2px 15px;font-size:30px;font-weight:bold;color:#000000}
+  #leftColumn h3, #fullPage h3 {font-size:22px;font-weight:bold;color:#000000}
+  #leftColumn p, #leftColumn div {}
+  
+.genericSection {margin:0px 40px 0px 60px;}
+ .genericSection h2{font-size:30px;font-weight:bold}
+ /* use this after the 2 columns on any pages */
+  .genericContent {padding:6px 0px 20px 65px;}
+  .genericContent h2 {font-size:22px;font-weight:bold}
+  .genericContent h4 {font-weight:bold; }
+  /*
+#genericContent a:link, #genericContent a:visited {color:#000000;text-decoration:none;padding:0px 3px 0px 3px;border-bottom:#f80b27 1px solid;}
+#genericContent a:hover {background-color:#ffb3b3} */
+ 
+ #aboutUsSection {width:350px;background:url(../images/omei_text.jpg) 0px 0px no-repeat;padding:12px 5px 0px 95px;}
+  #SiFuSection {width:350px;background:url(../images/sifu_text.jpg) 0px 0px no-repeat;padding:12px 5px 0px 95px;}
+  #AchievementSection {width:350px;background:url(../images/achievements_text.jpg) 0px -2px no-repeat;padding:12px 5px 0px 100px;}
+  #VideosSection {width:350px;background:url(../images/video_text.jpg) 0px 0px no-repeat;padding:12px 5px 0px 90px;}
+  #PhotosSection {width:350px;background:url(../images/photos_text.jpg) 0px 0px no-repeat;padding:12px 5px 0px 90px;}
+  
+  #ScheduleSection {background:url(../images/schedule_text.jpg) 0px 0px no-repeat;padding:12px 5px 0px 85px;}
+#ProgramsSection {width:350px;background:url(../images/programs_text.jpg) 0px 0px no-repeat;padding:12px 5px 0px 95px;}
+#LinksSection {height:300px;width:350px;background:url(../images/lniks_text.jpg) 0px 0px no-repeat;padding:12px 5px 0px 110px;}
+#LinksSection ul {}
+#LinksSection ul li {padding-bottom:10px;list-style-type:none}
+#LinksSection ul li a:link, #LinksSection ul li a:visited , #contactSection a:link, #contactSection a:visited{color:#000000;text-decoration:none;border-bottom:#a09428 1px dashed}
+#LinksSection ul li a:hover , #contactSection a:hover{background-color:#d5c853}
+
+/* 
+#NewsSection a:link, #NewsSection a:visited,#LinksSection a:link, #LinksSection a:visited {color:#000000;text-decoration:none;padding:0px 3px 0px 3px;}
+#NewsSection a:hover,#LinksSection a:hover {background-color:#d5c853}
+*/
+
+#StoreSection {width:350px;background:url(../images/store_text.jpg) 0px 0px no-repeat;padding:12px 5px 0px 85px;} 
+#contactSection {width:350px;background:url(../images/contact_text.jpg) 0px 0px no-repeat;padding:12px 5px 0px 100px;font-size:16px;}
+#StoreSection a:link, #StoreSection a:visited, #contactSection a:link, #contactSection a:visited , #genericContent a:link, #genericContent a:visited{color:#000000;text-decoration:none;}
+#StoreSection a:hover, #contactSection a:hover, #genericContent a:hover {background-color:#d5c853}
+#contactSection ul {font-size:14px;list-style-type:none;}
+#contactSection ul li {padding-bottom:5px;}
+
+ #leftSchedule{float:left;padding-bottom:20px;}
+ #rightSchedule {float:left;padding-top:30px;padding-left:70px;}
+ 
+
+
+table.rankTable {margin:0px 30px 0px 40px;width:600px;text-align:center;}
+table.rankTable th {font-weight:bold;text-align:center;}
+table.rankTable td {text-align:center;}
+
+table.scheduleTable {width:700px;border:1px solid red;text-align:center;}
+table.saturdayScheduleTable {width:300px;border:1px solid red;text-align:center;}
+table.scheduleTable th, table.saturdayScheduleTable th {text-align:center;font-weight:bold;height:20px;background-color:#ffa7a7}
+table.scheduleTable td , table.saturdayScheduleTable td{height:50px;border:1px solid red;font-size:12px;padding:0px 2px 0px 2px}
+
+table.videoTable, table.photoTable {}
+table.videoTable td , table.photoTable td{padding-bottom:5px;width:400px;vertical-align:top;}
+table.videoTable td h4, table.photoTable td h4{font-weight:bold;font-size:14px;color:#f70a17;}
+
+  #announcementSection {margin-top:40px;background:url(../images/news2_text.jpg) 0px 30px no-repeat;}
+ #announcementSection .announcementSectionContent {padding:6px 5px 10px 100px;}
+ #announcementSection .announcementSectionContent h4{font-weight:bold;font-size:12px;}
+ #announcementSection .announcementSectionContent h3{font-weight:bold;font-size:18px;color:#f70a17;}
+ #announcementSection ul {padding-left:8px;}
+ #announcementSection ul li {list-style-type:disc;padding-bottom:3px;}
+ #announcementSection a:link, #announcementSection a:visited {color:#000000;text-decoration:none;padding:0px 3px 0px 3px;border-bottom:#a09428 1px dashed}
+ #announcementSection a:hover {background-color:#d5c853}
+ 
+ 
+ #footer {background:#000000 url(../images/monks.jpg) 0px 0px repeat-x;}
+ #footer div.plainFooter {height:300px;}
+ #footer div#footerWrapper {margin:0 auto;color:#ffffff;width:900px;}
+ #footer div#footerWrapper #wushuInfo {float:left;margin:20px 0px 10px 60px;width:300px;background:url(../images/wushu_text.jpg) -5px 0 no-repeat;padding:0px 0px 0px 80px; }
+
+ #footer div#footerWrapper #wushuInfo h2{font-size:16px;font-weight:bold;}
+ 
+  #footer div#footerWrapper div#wushuInfoCont{font-size:14px;padding:30px 0px 0px 535px;width:250px;}
+ /* #footer div#footerContent div#footerContact ul {list-style-type:none;} */
+
+#rightColumn #ourStudentsSection{margin:60px 15px 0px 0px;width:300px;background:url(../images/students_text.jpg) -3px 30px no-repeat;padding:0px 0px 0px 80px;}
+#rightColumn #experienceSection{margin:20px 15px 0px 0px;width:300px;background:url(../images/experience_text.jpg) -3px 32px no-repeat;padding:0px 0px 0px 85px;}
+ #rightColumn #rightColumnSection{margin:60px 15px 0px 0px;width:300px;background:url(../images/omei_text.jpg) -3px 32px no-repeat;padding:0px 0px 0px 80px;}
+#rightColumn #scheduleSection{margin:60px 15px 0px 0px;width:300px;padding:0px 0px 0px 80px;}
+
+ #rightColumn  h2 {margin:12px 0px 7px -80px;font-size:30px;font-weight:bold;color:#000000}
+ #rightColumn .experienceSect {}
+ #rightColumn .experienceSect ul li{padding-bottom:7px;list-style-type:none;}
+ #rightColumn div {padding-right:10px;}
+ 
+ .clearBoth {clear:both}
+ .clearLeft {clear:left}
+ .center{text-align:center}
+ 
+/**
+ * Multi Level Drop Down Menu 2.1 - CSS Temp
+ * October 1, 2009
+ * Corey Hart @ http://www.codenothing.com
+ */ 
+
+#multi-ddm {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#multi-ddm > li {
+	float: left;
+	background:url(../images/menuBackground.jpg) -1px 0 repeat-x;
+}
+
+#multi-ddm > li > a {
+	display: block;
+	width: 110px;
+	text-align:center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;border-right: 1px solid #c5c5c5;
+	/* background-color: #f1f1f1; */
+	background:url(../images/menuBackground.jpg) -1px 0 repeat-x;
+	
+}
+
+#multi-ddm > li > .parent-hover {
+	background:url(../images/menuBackground_over.jpg) -1px 0 repeat-x;
+	/*background-color: #c5c5c5;
+	 border-left: 1px solid #545454; */
+}
+
+#multi-ddm > li ul {
+	display: none;
+	list-style: none;
+	position: absolute;
+	margin: 0px 0 0 5px;
+	z-index: 90;
+	padding: 0;
+}
+
+#multi-ddm > li ul a {
+	/* submenu background */
+	display: block;
+	width: 110px;
+	padding:5px 3px 5px 3px;
+	/* border-bottom: 1px solid #545454;
+	border-right: 1px solid #545454;
+	border-left: 1px solid #545454; */
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 10pt;
+	color: #ffffff;
+	background-color: #000000;
+}
+
+#multi-ddm > li ul li a.first {
+	/* border-top: 1px solid #545454; */
+}
+
+#multi-ddm > li ul .child-hover1 {
+	/* submenu hover */
+	background-color: #750b0b;
+	color:#ffffff;
+}
+
+#multi-ddm > li ul .child-hover2 {
+	background-color: black;
+	color: white;
+}
+
+#multi-ddm > li ul .child-hover3 {
+	background-color: black;
+	color: white;
+}
+
+#multi-ddm > li ul .child-hover4 {
+	background-color: black;
+	color: white;
+}
+
+#multi-ddm > li ul li ul {
+	margin: -29px 0 0 163px;
+	position: absolute;
+}
+
+#multi-ddm span {
+	float: right;
+}
